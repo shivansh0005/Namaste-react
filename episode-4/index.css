@@ -1,0 +1,153 @@
+
+
+ .header{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo{
+    width:200px;
+}
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the cards */
+  }
+  
+  .res-card {
+    width: 200px; /* Set a fixed width */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .res-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  h3, h4 {
+    margin: 5px 0;
+  }
+  .res-card:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+.nav-items ul {
+  list-style-type: none; /* Removes default bullet points */
+  display: flex; /* Aligns list items horizontally */
+  gap: 20px; /* Adds space between items */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.nav-items li {
+  cursor: pointer; /* Changes the cursor to pointer for better UX */
+  font-size: 16px; /* Adjusts font size for better readability */
+}
+.nav_items > ul >li{
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* HEADER STYLES */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 150px; /* Adjust logo size */
+  }
+  
+  /* NAVIGATION STYLES */
+  .nav_items {
+    display: flex;
+   
+  }
+  
+  .nav_items ul {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav_items ul li {
+    padding: 10px 20px;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .nav_items ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav_items ul li a:hover {
+    color: #800000; /* Hover effect */
+  }
+  
+  /* Add a nice underline effect on hover */
+  .nav_items ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #800000;
+    transition: width 0.3s ease;
+  }
+  
+  .nav_items ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .nav_items ul li:hover {
+    cursor: pointer;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav_items ul {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .nav_items ul li {
+      margin: 10px 0;
+    }
+  }
+  
